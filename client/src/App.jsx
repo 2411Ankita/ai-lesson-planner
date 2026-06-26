@@ -57,7 +57,7 @@ const handleActionSelect = async (action) => {
     console.log("Sending request...");
 
     const response = await fetch(
-      "http://localhost:5000/api/generate",
+      "VITE_API_URL=https://ai-lesson-planner-affr.onrender.com",
       {
         method: "POST",
         headers: {
